@@ -1,4 +1,5 @@
 import 'package:client/core/theme/theme.dart';
+import 'package:client/features/pages/log_in_page.dart';
 import 'package:client/features/pages/sign_up_page.dart';
 import 'package:flutter/material.dart';
 
@@ -61,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return MaterialApp(
       title: 'Flutter Authentication',
       theme: AppTheme.darkThemeMode,
-      home: SignUpPage(),
+      home: LogInPage(),
     );
   }
 }
