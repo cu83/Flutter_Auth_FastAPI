@@ -8,7 +8,7 @@ import uuid
 
 router = APIRouter()
 
-@router.post('/signup', status_code=200)
+@router.post('/signup', status_code=201)
 def signup_user(user: UserCreate, db: Session=Depends(get_db)):
     
     user_db = db.query(User).filter(User.email == user.email).first()
